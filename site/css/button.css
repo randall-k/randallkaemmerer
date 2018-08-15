@@ -1,0 +1,37 @@
+.Button {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: var(--btnText);
+  border: var(--btnBorder);
+  padding: 0.25em 1.25em;
+  letter-spacing: 0.05em;
+}
+
+.Button:hover {
+  color: #fff;
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  text-shadow: none;
+}
+
+.Button.Button--alt:hover {
+  background: #fff;
+  border: 2px solid #fff;
+  color: var(--primary);
+}
+
+.Button.Button--shadow {
+  text-shadow: 2px 2px 4px #000;
+}
+
+.Button.Button--bottom {
+  position: relative;
+  top: 1em;
+}
+
+@media(--tablet) {
+  .Button.Button--bottom {
+    top: 8em;
+    left: 6em;
+  }
+}

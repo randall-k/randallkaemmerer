@@ -1,0 +1,18 @@
+@supports(clip-path: polygon(0 125px, 100% 0, 100% calc(100% - 125px), 0 100%)) {
+
+  .Stripe {
+    clip-path: polygon(0 125px, 100% 0, 100% calc(100% - 125px), 0 100%);
+    padding: 125px 0;
+  }
+
+  .Stripe.Stripe--topOnly {
+    clip-path: polygon(0 125px, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 0;
+  }
+
+  .Stripe.Stripe--bottomOnly {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 125px), 0 100%);
+    padding-top: 0;
+  }
+
+}
